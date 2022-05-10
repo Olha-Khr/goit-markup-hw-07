@@ -444,8 +444,8 @@ a {
 /* portfolio */
 
 /* --------------button-------- */
-.button-act:hover,
-.button-act:focus {
+.button__act:hover,
+.button__act:focus {
   background: var(--accent-color);
   color: var(--primare-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -480,15 +480,15 @@ a {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -----------all----------- */
-.service-box-styles:focus,
-.service-box-styles:hover {
+.all-cards__styles:focus,
+.all-cards__styles:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.all-cards:hover .services-box-text {
+.all-cards:hover .all-cards__caver {
   transform: translateY(0);
 }
-.service-box-styles {
+.all-cards__styles {
   display: block;
   cursor: pointer;
 }
@@ -503,11 +503,11 @@ a {
   width: 100%;
   height: auto;
 }
-.services-box-img {
+.all-cards__img {
   position: relative;
   overflow: hidden;
 }
-.services-box-text {
+.all-cards__caver {
   position: absolute;
   top: 0;
   left: 0;
@@ -526,7 +526,7 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-.services-styles {
+.all-cards__item {
   border-top: none;
   padding: 20px 24px;
   border-bottom: 1px solid var(--services-styles-solid);
@@ -540,7 +540,7 @@ a {
 .all-cards:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.services-all-header {
+.all-cards__header {
   color: var(--header-styles-color);
   font-weight: 700;
   font-size: 18px;
@@ -548,7 +548,7 @@ a {
   margin-bottom: 4px;
   letter-spacing: 0.06em;
 }
-.services-all-text {
+.all-cards__text {
   color: var(--contacts-text-color);
   font-weight: 400;
   letter-spacing: 0.03em;
