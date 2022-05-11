@@ -1077,12 +1077,12 @@ ol {
   letter-spacing: 0.06em;
 }
 
-.all-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.all-cards:nth-child(3n) {
+  margin-right: 0;
+}
+
+.all-cards:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .all-cards__item {
@@ -1093,11 +1093,11 @@ ol {
   border-right: 1px solid var(--services-styles-solid);
 }
 
-.all-cards:nth-child(3n) {
-  margin-right: 0;
-}
-
-.all-cards:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+.all-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */
