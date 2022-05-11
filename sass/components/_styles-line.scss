@@ -1,0 +1,37 @@
+.styles-line {
+  display: flex;
+  flex-wrap: wrap;
+  &__img {
+    display: flex;
+    border: none;
+    padding: auto;
+    height: 120px;
+    background-color: var(--team-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+    padding: 0;
+  }
+  &__tex {
+    color: var(--contacts-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &__header {
+    color: var(--header-styles-color);
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+}
+.styles-line__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

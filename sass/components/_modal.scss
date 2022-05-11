@@ -1,0 +1,140 @@
+.modal {
+  position: absolute;
+  min-height: 581px;
+  min-width: 528px;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  background-color: var(--primare-text-color);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  box-shadow: 0px 1px 3px rgb(0, 0, 0.12), 0px 1px 1px rgb(0, 0, 0.14), 0px 2px 1px rgb(0, 0, 0.2);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
+  &__icon {
+    width: 11px;
+    height: 11px;
+    color: currentColor;
+  }
+  &__title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-styles-color);
+    margin-bottom: 30px;
+  }
+  &__button {
+    display: block;
+    padding: 10px 55px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgb(0, 0, 0.15);
+    margin: 30px auto 0;
+    cursor: pointer;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(-2, 2);
+}
+
+.modal__close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  color: var(--logo-studio-color);
+  cursor: pointer;
+  background: var(--main-background-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__close:hover,
+  &__close:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.form__field:not(.form-checkbox) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+}
+
+.form__field:first-child {
+  margin-top: 18px;
+}
+
+.form__label {
+  position: absolute;
+  bottom: 100%;
+  padding-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  color: var(--contacts-text-color);
+}
+
+.form__input {
+  background-color: transparent;
+  padding: 12px 12px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  cursor: text;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__textarea {
+  resize: none;
+  padding: 12px 16px;
+  height: 120px;
+  background-color: transparent;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  cursor: text;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__field:not(.form-checkbox) .form__icon {
+  color: currentColor;
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:focus + .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-color: var(--accent-color);
+  outline: 0px;
+}

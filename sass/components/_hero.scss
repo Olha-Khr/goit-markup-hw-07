@@ -1,0 +1,30 @@
+.hero {
+  padding-top: 0;
+}
+.hero-box {
+  display: flex;
+}
+.hero-line {
+  margin-right: 30px;
+  &__img {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    width: 100%;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primare-text-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
+.hero-line:not(:last-child) {
+  margin-right: 30px;
+}

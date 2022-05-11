@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -74,7 +75,7 @@
       <section class="section styles">
         <div class="container">
           <h2 class="visually-hidden">Наш стиль</h2>
-          <ul class="styles-line">
+          <ul class="styles-line list">
             <li class="styles-line__item">
               <div class="styles-line__img">
                 <svg class="styles-line__icon" width="70" height="70">
@@ -453,13 +454,8 @@
         </div>
         <div class="page-footer__subscribe">
           <h3 class="page-footer__subtitle">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-          <form class="form form--subscribe">
-            <input
-              class="form__input form__input--subscribe"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
+          <form class="form form__subscribe">
+            <input class="form__input-subscribe" type="email" name="email" placeholder="E-mail" />
             <button class="btm button__main" type="submit">
               Подписаться
               <svg class="button__icon" width="24" height="24">
@@ -511,24 +507,24 @@
             ></textarea>
           </div>
           <!-- <div class="form-field form-checkbox"> -->
-          <label for="agreemant" class="modal__agreements"
+          <label for="agreemant" class="checkbox"
             ><input
               type="checkbox"
               name="agreemant"
               id="agreemant"
-              class="modal__agreements-check visually-hidden"
+              class="checkbox__agreements-check visually-hidden"
             />
 
-            <svg class="modal__agreements-icon" width="16" height="15">
+            <svg class="checkbox__agreements-icon" width="16" height="15">
               <use href="./images/symbol.svg#icon-check"></use>
             </svg>
-            <span class="modal__agreements-text">
+            <span class="checkbox__agreements-text">
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal__agreements-link">Условия договора</a>
+              <a href="" class="checkbox__agreements-link">Условия договора</a>
             </span>
           </label>
           <!-- </div> -->
-          <button class="btm modal__button" type="submit">Отправить</button>
+          <button class="btm checkbox__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
