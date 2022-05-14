@@ -210,7 +210,7 @@ ol {
   margin-right: 8px;
 }
 
-.styles-line {
+.styles__line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +218,7 @@ ol {
       flex-wrap: wrap;
 }
 
-.styles-line__img {
+.styles__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +238,7 @@ ol {
   padding: 0;
 }
 
-.styles-line__tex {
+.styles__tex {
   color: var(--contacts-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -246,7 +246,7 @@ ol {
   letter-spacing: 0.03em;
 }
 
-.styles-line__header {
+.styles__header {
   color: var(--header-styles-color);
   font-size: 14px;
   line-height: 1.14;
@@ -254,11 +254,11 @@ ol {
   margin-bottom: 10px;
 }
 
-.styles-line__item {
+.styles__item {
   width: 270px;
 }
 
-.styles-line__item:not(:last-child) {
+.styles__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -392,21 +392,25 @@ ol {
   padding-top: 0;
 }
 
-.hero-box {
+.hero__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.hero-line {
+.hero__line {
   margin-right: 30px;
 }
 
-.hero-line__img {
+.hero__line:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero__img {
   position: relative;
 }
 
-.hero-line__text {
+.hero__text {
   position: absolute;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -420,10 +424,6 @@ ol {
   letter-spacing: 0.03em;
   color: var(--primare-text-color);
   background: rgba(47, 48, 58, 0.8);
-}
-
-.hero-line:not(:last-child) {
-  margin-right: 30px;
 }
 
 .services {
@@ -473,6 +473,25 @@ ol {
   background-color: var(--team-background-color);
 }
 
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__img {
+  width: 270px;
+  background-color: var(--primare-text-color);
+  margin-right: 30px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__img:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team__header {
   color: var(--header-styles-color);
   font-weight: 500;
@@ -490,25 +509,6 @@ ol {
   line-height: 1.19;
   text-align: center;
   margin-bottom: 10px;
-}
-
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.team-img {
-  width: 270px;
-  background-color: var(--primare-text-color);
-  margin-right: 30px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-img:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-styles {
@@ -1021,34 +1021,34 @@ ol {
   cursor: pointer;
 }
 
-.all-cards__styles:focus,
-.all-cards__styles:hover {
+.cards__styles:focus,
+.cards__styles:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.all-cards:hover .all-cards__caver {
+.cards:hover .cards__caver {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.all-cards {
+.cards {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.all-cards__styles {
+.cards__styles {
   display: block;
   cursor: pointer;
 }
 
-.all-cards__img {
+.cards__img {
   position: relative;
   overflow: hidden;
 }
 
-.all-cards__caver {
+.cards__caver {
   position: absolute;
   top: 0;
   left: 0;
@@ -1067,7 +1067,7 @@ ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.all-cards__text {
+.cards__text {
   color: var(--contacts-text-color);
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -1075,7 +1075,7 @@ ol {
   line-height: 1.87;
 }
 
-.all-cards__header {
+.cards__header {
   color: var(--header-styles-color);
   font-weight: 700;
   font-size: 18px;
@@ -1084,15 +1084,15 @@ ol {
   letter-spacing: 0.06em;
 }
 
-.all-cards:nth-child(3n) {
+.cards:nth-child(3n) {
   margin-right: 0;
 }
 
-.all-cards:nth-last-child(-n + 3) {
+.cards:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.all-cards__item {
+.cards__item {
   border-top: none;
   padding: 20px 24px;
   border-bottom: 1px solid var(--services-styles-solid);

@@ -1,6 +1,8 @@
-.styles-line {
-  display: flex;
-  flex-wrap: wrap;
+.styles {
+  &__line {
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__img {
     display: flex;
     border: none;
@@ -28,10 +30,10 @@
     list-style: none;
     margin-bottom: 10px;
   }
-}
-.styles-line__item {
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  &__item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
